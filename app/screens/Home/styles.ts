@@ -56,7 +56,7 @@ export const Modules = styled.TouchableOpacity<ModulesProps>`
   padding-left: 16px;
   margin-bottom: 16px;
 
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
 
   flex-direction: row;
   justify-content: space-between;
@@ -74,14 +74,15 @@ export const ModulesColor = styled.View<ModulesColorProps>`
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
 `;
 {/* PROCESS */}
 
 export const ProcessContainer = styled.TouchableOpacity<ProcessProps>`
 
-  margin: auto;
   margin-top: 8px;
+  margin-right: 16px;
+
   opacity: ${({ disabled }) => disabled ? 0.5 : 1};
 `;
 
@@ -91,7 +92,7 @@ export const Process = styled.View`
   background: #fff;
 
   flex-direction: row;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
   border-radius: 8px;
 
   justify-content: space-evenly;

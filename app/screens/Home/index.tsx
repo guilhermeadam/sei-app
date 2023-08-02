@@ -65,12 +65,14 @@ export default function Home() {
             onRefresh={delay}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
-              <Modules disabled={item.isDisabled}>
-                <Text size={20}>{item.name}</Text>
-                <ModulesColor background={item.color}>
-                  <Entypo name="chevron-right" size={24} color="#fff" />
-                </ModulesColor>
-              </Modules>
+              <Link href={item.href} asChild>
+                <Modules disabled={item.isDisabled}>
+                  <Text size={20}>{item.name}</Text>
+                  <ModulesColor background={item.color}>
+                    <Entypo name="chevron-right" size={24} color="#fff" />
+                  </ModulesColor>
+                </Modules>
+              </Link>
             )}
           />
         </View>
@@ -79,9 +81,8 @@ export default function Home() {
 
         <FlatList
           data={process}
-          numColumns={2}
-          keyExtractor={(item, index) => index}
-          showsVerticalScrollIndicator={false}
+          horizontal
+          showsHorizontalScrollIndicator={false}
           renderItem={({ item }) => (
             <ProcessContainer disabled={item.isDisabled}>
               <Process>

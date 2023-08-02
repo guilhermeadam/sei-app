@@ -11,12 +11,12 @@ export const process = [
   },
   {
     name: 'Cadastro',
-    isDisabled: false,
+    isDisabled: true,
     icon: 'switcher',
   },
   {
     name: 'Reprocessar',
-    isDisabled: false,
+    isDisabled: true,
     icon: 'sync',
   },
 ];

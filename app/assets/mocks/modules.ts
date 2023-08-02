@@ -3,7 +3,7 @@ export const modules = [
     name: 'Faturamento',
     color: '#902A86',
     isDisabled: false,
-    href: ''
+    href: '../screens/Faturamento'
   },
   {
     name: 'Arrecadação',
@@ -20,13 +20,13 @@ export const modules = [
   {
     name: 'Cadastro',
     color: '#fbd24e',
-    isDisabled: false,
+    isDisabled: true,
     href: ''
   },
   {
     name: 'Atendimento',
     color: '#ff6b85',
-    isDisabled: false,
+    isDisabled: true,
     href: ''
   }
 ];
